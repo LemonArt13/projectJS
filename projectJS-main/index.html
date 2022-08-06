@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Weather forecast</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container">
+        <div class="flex_m">
+          <section class="sidebar">
+            <div class="search">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                aria-hidden="true"
+                class="h-5 w-5 text-black text-white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="Search for place"
+                class="input_search outline-none"
+              />
+              <button class="button_Submit">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  class="h-5 w-5 text-gray-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </section>
+          <div class="rightside">
+            <header class="header">
+              <div class="header_header">
+                <div class="title">
+                  <p class="text-2xl font-black">WeForecast</p>
+                </div>
+                <div class="header_buttons">
+                  <div class="temp_buttons">
+                    <button class="temp_button_1 temp_button_white">°C</button>
+                    <button
+                      class="temp_button_2 temp_button_dark margin_button"
+                    >
+                      °F
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <section class="weekforecast">
+              <div class="weekforecst_block" id="weather"></div>
+            </section>
+            <section class="todays_highlights">
+              <div class="highlights_block">
+                <h3 class="highlights_title">Today's Highlights</h3>
+                <div class="highlights_cards">
+                  <div class="highlights_card">
+                    <p class="text_gray_400 w-full">UV Index</p>
+                  </div>
+                  <div class="highlights_card">
+                    <p class="text_gray_400 w-full">Wind Status</p>
+                  </div>
+                  <div class="highlights_card">
+                    <p class="text_gray_400 w-full">Sunrise & Sunset</p>
+                  </div>
+                  <div class="highlights_card">
+                    <p class="text_gray_400 w-full">Humidity</p>
+                  </div>
+                  <div class="highlights_card">
+                    <p class="text_gray_400 w-full">Visibility</p>
+                  </div>
+                  <div class="highlights_card">
+                    <p class="text_gray_400 w-full">Air Quality</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/projectJS-main/JavaScript/script.js"></script>
+  </body>
+</html>
