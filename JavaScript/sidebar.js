@@ -1,6 +1,6 @@
 const forecastList = document.querySelector("#forecast");
 fetch(
-  "https://api.openweathermap.org/data/2.5/weather?q=Pamplona&units=metric&appid=8abba83ab8f518e7f932c74ac200adb8"
+  "https://api.openweathermap.org/data/2.5/weather?q=Ternopil&units=metric&appid=8abba83ab8f518e7f932c74ac200adb8"
 )
   .then(function (resp) {
     return resp.json();
